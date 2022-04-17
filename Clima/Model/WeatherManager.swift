@@ -35,6 +35,7 @@ struct WeatherManager {
     func formatString(stringData: String) -> String {
         var newString = stringData.replacingOccurrences(of: " ", with: "%20")
         newString = newString.folding(options: .diacriticInsensitive, locale: .current)
+        
         return newString
     }
     
